@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PROYECTA-IA: Capítulo V, Fundamentos Económicos / Análisis Económico para Proyectos de Grado de Ingeniería.">
+  <title>PROYECTA-IA | Capítulo V · Análisis Económico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="access-locked">
+
+  <div id="accessGate" class="access-gate">
+    <div class="access-card">
+      <div class="access-logo">P</div>
+      <h2>Acceso a PROYECTA-IA</h2>
+      <p class="access-subtitle">Capítulo V · Fundamentos Económicos / Análisis Económico</p>
+      <p>Ingresa tu número de Carnet de Identidad autorizado.</p>
+      <label for="ciAccess">Número de C.I.</label>
+      <input id="ciAccess" type="password" inputmode="numeric" autocomplete="off" placeholder="Solo números">
+      <button id="accessBtn" class="primary access-button" type="button">Ingresar</button>
+      <p id="accessMessage" class="access-message" aria-live="polite"></p>
+      <p class="access-privacy">El acceso se valida mediante la base central de PROYECTA-IA.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <h1>PROYECTA-IA</h1>
+          <p>Capítulo V · Fundamentos Económicos / Análisis Económico</p>
+          <p class="author">Realizado por: Luis Cabezas Tito, Ph. D.</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="badge">CLASIFICAR · CUANTIFICAR · CONSOLIDAR · INTERPRETAR</div>
+        <button id="logoutBtn" class="logout-btn hidden" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero economic-hero">
+      <span class="eyebrow">CAPÍTULO V DE PROYECTA-IA</span>
+      <h2>FUNDAMENTOS ECONÓMICOS / <span>ANÁLISIS ECONÓMICO DEL PROYECTO</span></h2>
+      <p>
+        Este módulo ayuda a identificar, clasificar, cuantificar, consolidar e interpretar los recursos
+        económicos necesarios para materializar la solución tecnológica. En un Proyecto de Grado, el propósito
+        principal no es elaborar un estudio financiero empresarial, sino demostrar cuánto cuesta desarrollar e
+        implementar la propuesta y si la estructura de costos guarda coherencia con la ingeniería realizada.
+      </p>
+
+      <div class="economic-stop">
+        <strong>Este chatbot NO realiza evaluación económica o financiera.</strong>
+        Aquí no corresponden VAN, TIR, relación B/C, periodo de recuperación ni rentabilidad, salvo que exista
+        posteriormente un módulo específico y datos verificables de beneficios monetarios.
+      </div>
+
+      <div class="hero-grid">
+        <article><span>①</span><strong>Clasificar</strong><p>Hardware, software, implementación, recursos humanos y otras categorías que correspondan.</p></article>
+        <article><span>②</span><strong>Calcular</strong><p>Cantidad × costo unitario, subtotales y consolidación en bolivianos.</p></article>
+        <article><span>③</span><strong>Respaldar</strong><p>Cotización, factura, nota de venta o consulta de mercado con fecha.</p></article>
+        <article><span>④</span><strong>Interpretar</strong><p>Explicar dónde se concentra el costo y su relación con la solución técnica.</p></article>
+      </div>
+    </section>
+
+    <nav class="section-nav">
+      <a href="#contexto">Contexto</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#clasificador">Clasificador</a>
+      <a href="#partidas">Partidas</a>
+      <a href="#tablas">Tablas</a>
+      <a href="#consolidacion">Consolidación</a>
+      <a href="#analisis">Análisis</a>
+      <a href="#estructura">Estructura</a>
+      <a href="#revisor">Revisor</a>
+    </nav>
+
+    <section id="contexto" class="card">
+      <span class="section-number">1</span>
+      <h3>CONTEXTO DEL PROYECTO</h3>
+      <p>
+        El análisis económico debe reflejar exactamente lo que fue diseñado e implementado en el Capítulo III.
+        Si un componente, servicio o actividad no forma parte de la solución, no debe aparecer artificialmente en
+        el presupuesto.
+      </p>
+
+      <label for="projectTitle">Título del Proyecto de Grado</label>
+      <textarea id="projectTitle" rows="2" placeholder="Título aprobado"></textarea>
+
+      <label for="generalObjective">Objetivo General</label>
+      <textarea id="generalObjective" rows="4" placeholder="Objetivo General aprobado"></textarea>
+
+      <label for="specificObjectives">Objetivos Específicos</label>
+      <textarea id="specificObjectives" rows="8" placeholder="Un objetivo por línea"></textarea>
+
+      <div class="two-col">
+        <div>
+          <label for="systemName">Sistema / prototipo desarrollado</label>
+          <input id="systemName" placeholder="Ej.: sistema electrónico automático para...">
+        </div>
+        <div>
+          <label for="referenceDate">Fecha de referencia de precios</label>
+          <input id="referenceDate" type="date">
+        </div>
+      </div>
+
+      <label for="priceEvidence">¿Cómo se respaldaron los precios?</label>
+      <textarea id="priceEvidence" rows="4" placeholder="Ej.: cotizaciones de proveedores, facturas, notas de venta, sitios oficiales, consultas de mercado..."></textarea>
+    </section>
+
+    <section id="categorias" class="card">
+      <span class="section-number">2</span>
+      <h3>SELECCIONA LAS CATEGORÍAS DE COSTO QUE TIENE TU PROYECTO</h3>
+      <p>
+        Para proyectos de desarrollo tecnológico es suficiente utilizar la palabra <b>costos</b>. También puede
+        emplearse “inversión” o “gastos” cuando el estudiante desee diferenciar técnicamente estos conceptos.
+      </p>
+
+      <div class="naming-choice">
+        <label><input type="radio" name="naming" value="costos" checked> Usar principalmente <b>Costos</b> (recomendado)</label>
+        <label><input type="radio" name="naming" value="mixto"> Diferenciar <b>Inversión / Costos / Gastos</b></label>
+        <label><input type="radio" name="naming" value="personalizado"> Mantener denominación propia del proyecto</label>
+      </div>
+
+      <div id="costSelector" class="cost-selector"></div>
+
+      <div class="economic-rule">
+        <strong>Categorías base de PROYECTA-IA:</strong> hardware/equipos, software/servicios, implementación/integración
+        y recursos humanos. La consolidación general siempre se genera. Operación, mantenimiento, actuadores,
+        infraestructura y contingencia son opcionales si corresponden al alcance real.
+      </div>
+
+      <div class="category-cards">
+        <article class="category-card"><h4>Hardware / equipos</h4><p>Sensores, controladores, fuentes, módulos, instrumentos adquiridos, equipos y dispositivos que forman parte del sistema.</p></article>
+        <article class="category-card"><h4>Software / servicios</h4><p>Licencias, simuladores, nube, conectividad, hosting y herramientas. El software libre puede mostrarse con costo Bs 0,00.</p></article>
+        <article class="category-card"><h4>Implementación / integración</h4><p>PCB, cableado, gabinete, conectores, montaje, materiales de instalación, consumibles y elementos necesarios para poner en funcionamiento el sistema.</p></article>
+        <article class="category-card"><h4>Recursos humanos</h4><p>Diseño, programación, montaje, pruebas y documentación. Si el estudiante realiza el trabajo, puede declararse como costo imputado o referencial.</p></article>
+        <article class="category-card"><h4>Operación</h4><p>Energía, conectividad, agua, consumibles u otros recursos que aparecen durante el funcionamiento regular.</p></article>
+        <article class="category-card"><h4>Mantenimiento</h4><p>Calibración, inspección, limpieza, reposición preventiva/correctiva y tiempo técnico de intervención.</p></article>
+      </div>
+    </section>
+
+    <section id="clasificador" class="card">
+      <span class="section-number">3</span>
+      <h3>AYUDA PARA CLASIFICAR TUS COSTOS</h3>
+      <p>Si no sabes en qué categoría colocar un recurso, escribe o pega tus ítems. PROYECTA-IA sugerirá una clasificación.</p>
+
+      <div class="classifier-grid">
+        <div>
+          <label for="classifierText">Lista de recursos o actividades</label>
+          <textarea id="classifierText" rows="12" placeholder="ESP32&#10;Sensor de corriente&#10;Gabinete&#10;Internet durante pruebas&#10;Programación del firmware&#10;Calibración anual..."></textarea>
+          <button id="classifyBtn" class="primary green-btn" type="button">Sugerir clasificación</button>
+        </div>
+        <div id="classifierOutput" class="classification-result">
+          <h4>La clasificación sugerida aparecerá aquí</h4>
+          <p class="small">La decisión final debe guardar correspondencia con el uso real del recurso dentro del proyecto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="partidas" class="card">
+      <span class="section-number">4</span>
+      <h3>REGISTRA LAS PARTIDAS ECONÓMICAS</h3>
+      <p>
+        El costo de cada ítem se calcula como <b>Ci = Qi × Pi</b>, donde Qi es la cantidad y Pi el costo unitario.
+        Todos los montos se expresan en <b>bolivianos (Bs)</b>, con <b>dos decimales</b>.
+      </p>
+
+      <div class="item-form">
+        <div><label for="itemDesc">Descripción</label><input id="itemDesc" placeholder="Ej.: Sensor de temperatura"></div>
+        <div><label for="itemQty">Cantidad</label><input id="itemQty" inputmode="decimal" value="1"></div>
+        <div><label for="itemUnit">Unidad</label><input id="itemUnit" value="unidad" placeholder="unidad / h / mes"></div>
+        <div><label for="itemUnitCost">Costo unitario (Bs)</label><input id="itemUnitCost" inputmode="decimal" placeholder="0,00"></div>
+        <div><label for="itemCategory">Categoría</label><select id="itemCategory"></select></div>
+      </div>
+
+      <div class="item-form secondary">
+        <div><label for="itemNature">Naturaleza</label>
+          <select id="itemNature">
+            <option value="desembolso">Desembolso directo</option>
+            <option value="imputado">Costo imputado / referencial</option>
+            <option value="disponible">Recurso disponible (sin desembolso)</option>
+          </select>
+        </div>
+        <div><label for="itemProvider">Proveedor / fuente</label><input id="itemProvider" placeholder="Proveedor, fabricante o institución"></div>
+        <div><label for="itemDate">Fecha del precio</label><input id="itemDate" type="date"></div>
+        <div><label for="itemNote">Observación</label><input id="itemNote" placeholder="Cotización, factura, recurso institucional..."></div>
+      </div>
+
+      <button id="addItemBtn" class="primary green-btn" type="button">Añadir partida</button>
+      <button id="loadExampleBtn" type="button">Cargar ejemplo didáctico</button>
+
+      <div class="items-wrap">
+        <table class="editor-table">
+          <thead><tr>
+            <th>#</th><th>Categoría</th><th>Descripción</th><th>Cantidad</th><th>Unidad</th>
+            <th>Costo unitario (Bs)</th><th>Costo total (Bs)</th><th>Naturaleza</th><th>Fuente</th><th></th>
+          </tr></thead>
+          <tbody id="itemsBody"></tbody>
+        </table>
+      </div>
+
+      <div id="costSummary" class="cost-summary"></div>
+
+      <div class="download-row">
+        <button id="downloadCsvBtn" type="button">Descargar partidas CSV</button>
+        <button id="clearItemsBtn" type="button">Limpiar partidas</button>
+      </div>
+    </section>
+
+    <section id="tablas" class="card">
+      <span class="section-number">5</span>
+      <h3>GENERA LAS TABLAS DEL CAPÍTULO V CON EL FORMATO INSTITUCIONAL</h3>
+      <p>
+        PROYECTA-IA generará una tabla para cada categoría seleccionada y con partidas registradas.
+        El título va encima; la fuente debajo. El texto de la tabla es Times New Roman 10 y los valores monetarios
+        se alinean a la derecha con dos decimales.
+      </p>
+
+      <button id="generateTablesBtn" class="primary green-btn" type="button">Generar tablas del Capítulo V</button>
+      <button id="copyTablesBtn" type="button">Copiar tablas como texto</button>
+      <div id="tablesOutput" class="tables-wrap"></div>
+    </section>
+
+    <section id="consolidacion" class="card">
+      <span class="section-number">6</span>
+      <h3>CONSOLIDACIÓN DE COSTOS</h3>
+
+      <div class="two-col">
+        <div>
+          <label for="contingencyPct">Contingencia técnica (%) — opcional</label>
+          <input id="contingencyPct" inputmode="decimal" value="0">
+          <p class="small">Si se utiliza, debe justificarse. No existe un porcentaje universal obligatorio.</p>
+        </div>
+        <div>
+          <label for="includeFirstYear">Tratamiento de operación y mantenimiento</label>
+          <select id="includeFirstYear">
+            <option value="separate">Mostrar por separado</option>
+            <option value="firstyear">Calcular costo referencial del primer año</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="buildConsolidationBtn" class="primary green-btn" type="button">Generar consolidación</button>
+
+      <div class="consolidation-grid">
+        <div id="consolidationOutput"></div>
+        <div id="distributionOutput" class="percent-bars">
+          <h4>Distribución porcentual</h4>
+          <p class="small">Se calculará sobre los costos de desarrollo/implementación antes de operación y mantenimiento.</p>
+        </div>
+      </div>
+
+      <div class="economic-rule">
+        <strong>Transparencia económica:</strong> cuando existan recursos humanos imputados o recursos ya disponibles,
+        el chatbot puede mostrar tanto el <b>costo económico total</b> como el <b>desembolso directo</b>, evitando
+        confundir el valor técnico del trabajo con el efectivo realmente pagado.
+      </div>
+    </section>
+
+    <section id="analisis" class="card">
+      <span class="section-number">7</span>
+      <h3>ANÁLISIS ECONÓMICO: INTERPRETAR LA ESTRUCTURA DE COSTOS</h3>
+      <p>
+        El análisis no termina con el total. Debe explicar qué categorías concentran los recursos, qué costos son
+        recurrentes, qué partidas podrían optimizarse y si existe coherencia entre los recursos utilizados y las
+        funciones técnicas obtenidas.
+      </p>
+
+      <div class="analysis-criteria">
+        <article><h4>Incidencia</h4><p>Identificar la categoría y los ítems de mayor participación en el costo total.</p></article>
+        <article><h4>Coherencia técnica</h4><p>Comprobar que cada costo corresponda a una necesidad real del diseño o implementación.</p></article>
+        <article><h4>Desembolso vs. valor económico</h4><p>Distinguir dinero efectivamente pagado de recursos humanos imputados o recursos disponibles.</p></article>
+        <article><h4>Costos recurrentes</h4><p>Diferenciar implementación de operación y mantenimiento cuando existan.</p></article>
+        <article><h4>Optimización</h4><p>Detectar alternativas de menor costo sin comprometer requisitos técnicos.</p></article>
+        <article><h4>Evidencia</h4><p>Verificar proveedor, fecha y respaldo de precios para evitar presupuestos ficticios.</p></article>
+      </div>
+
+      <button id="generateAnalysisBtn" class="primary green-btn" type="button">Generar guía de interpretación con mis costos</button>
+      <div id="analysisOutput" class="output-box hidden"></div>
+    </section>
+
+    <section id="estructura" class="card">
+      <span class="section-number">8</span>
+      <h3>ESTRUCTURA TENTATIVA DEL CAPÍTULO V</h3>
+      <p>
+        La estructura se adapta a las categorías seleccionadas. No es obligatorio utilizar la palabra “inversión”;
+        para proyectos tecnológicos puede utilizarse “costos” de manera consistente.
+      </p>
+
+      <button id="buildOutlineBtn" class="primary green-btn" type="button">Generar índice tentativo</button>
+      <div id="outlineOutput" class="output-box hidden"></div>
+    </section>
+
+    <section id="revisor" class="card">
+      <span class="section-number">9</span>
+      <h3>REVISOR INTEGRAL DEL ANÁLISIS ECONÓMICO</h3>
+
+      <label for="chapterText">Pega la sección o el Capítulo V</label>
+      <textarea id="chapterText" rows="18" placeholder="Pega aquí el texto y las tablas convertidas a texto..."></textarea>
+
+      <button id="reviewChapterBtn" class="primary green-btn" type="button">Emitir dictamen</button>
+      <button id="copyPromptBtn" type="button">Copiar prompt para revisión profunda en ChatGPT</button>
+      <div id="reviewOutput" class="output-box hidden"></div>
+      <span id="promptStatus" class="small"></span>
+
+      <div class="economic-stop">
+        <strong>Control especial:</strong> si el texto introduce VAN, TIR, B/C, periodo de recuperación o rentabilidad
+        sin que el trabajo esté realizando una evaluación económica formal, PROYECTA-IA lo marcará como contenido
+        que corresponde a otro módulo.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>PROYECTA-IA</strong><p>Capítulo V · Fundamentos Económicos / Análisis Económico</p></div>
+      <div class="footer-author">Luis Cabezas Tito, Ph. D.</div>
+    </div>
+  </footer>
+
+  <script src="https://luisctito-sketch.github.io/proyecta-ia-acceso/access.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
